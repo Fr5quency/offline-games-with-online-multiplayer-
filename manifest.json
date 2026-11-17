@@ -1,0 +1,14 @@
+{
+  "name": "Outpost Games",
+  "short_name": "Outpost Games",
+  "description": "Chess with Stockfish, puzzles, lessons and 8 more games. Play offline, challenge the world online.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#101412",
+  "theme_color": "#101412",
+  "icons": [
+    { "src": "icon-180.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
