@@ -40,4 +40,3 @@ The Outpost repo's NOTES.md documents everything inside (chess engine, Stockfish
 ## Change log
 - 2026-11-17: First version: all Outpost games, games-only navigation, hero, new icon and banner, README.
 - 2026-11-17: What's new button on the Games home. (sw cache v2)
-- 2026-11-17: Bots using Stockfish (Grandmaster, Brilliant Mover) start loading it when the game starts and never wait for it: until `SFB.w` is ready they play with Outpost Chess (Grandmaster capped at 1.5 s). The bot also skips waiting for the review's analysis while the review engine is still loading. First move 15 s+ → 0.5 s (Brilliant Mover) / 1.6 s (Grandmaster) with a 12 s Stockfish load in testing. (cache 3)
