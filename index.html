@@ -1831,7 +1831,8 @@ function renderGames(){
   if(S.game==="blocks") return renderBlocks(v);
   const XG=window.OUTPOST_GAMES||{}; if(XG[S.game]) return XG[S.game].render(v);
   const best=store.get("blocksBest",0), cs=store.get("chess",null);
-  v.innerHTML=`<div class="ghero"><div class="ghtxt"><div class="eyebrow">OUTPOST GAMES</div><h2>${tr("Play offline. Challenge the world online.")}</h2>
+  v.innerHTML=`<button class="updchip" data-act="whatsNew"><span>✨ ${tr("What's new")}</span><small>${tr("Updated")} ${updWhen(UPDATES[0].at)}</small></button>
+    <div class="ghero"><div class="ghtxt"><div class="eyebrow">OUTPOST GAMES</div><h2>${tr("Play offline. Challenge the world online.")}</h2>
       <div class="ghbtns"><button class="btn primary" data-act="mpPlay">🌍 ${tr("Play online")}</button><button class="btn" data-act="friendOpen">🤝 ${tr("Play a friend")}</button><button class="btn" data-act="dailyGo">📅 ${tr("Daily puzzle")} · 🔥${GL()?AD(dailyStreak()):dailyStreak()}</button></div></div>
       <img class="ghimg" src="icon-512.png" alt=""></div>
     <div class="gcards">
@@ -3292,6 +3293,8 @@ try{ const m=sessionStorage.getItem("outpost.toast"); if(m){ sessionStorage.remo
 
 /* ---------- update notices: newest first. Add an entry at the top with every release (time in UTC). ---------- */
 const UPDATES=[
+ {at:"2026-11-17T11:13:00Z",en:["New ✨ What's new button at the top of the Games screen: see what changed in every update and when."],
+  ar:["زر ✨ ما الجديد في أعلى شاشة الألعاب: اعرف ما تغيّر في كل تحديث ومتى."]},
  {at:"2026-11-17T11:11:00Z",en:["Welcome to Outpost Games! Chess with Stockfish reviews, 11 bots, 150 puzzles, 19 opening and gambit lessons, online play and Play a friend, plus Block Puzzle, Sudoku, Minesweeper, Four in a Row, Merge, Solitaire, Dominoes and Backgammon.","Your chess progress, history and sign-in are shared with the Outpost app."],
   ar:["مرحبًا بك في ألعاب Outpost! شطرنج مع مراجعة Stockfish، و١١ بوتًا، و١٥٠ لغزًا، و١٩ درس افتتاحات ومناورات، واللعب أونلاين ومع صديق، إضافة إلى ألغاز المكعبات وسودوكو وكاسحة الألغام وأربعة في صف ودمج الأرقام والسوليتير والدومينو والطاولة.","تقدّمك في الشطرنج وسجلك وتسجيل دخولك مشتركة مع تطبيق Outpost."]}
 ];

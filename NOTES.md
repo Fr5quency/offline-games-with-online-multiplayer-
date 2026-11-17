@@ -11,7 +11,7 @@ The games part of [Outpost](https://github.com/Fr5quency/outpost) as its own app
 - bottom bar = Games · Chess · Puzzles · Lessons · Stats (`data-gx` = the `S.game` screen to open; `markTabs()` highlights the right one)
 - `show()` always shows the `games` view (the pocket-kit views are still in the code but unreachable; their data files are not included)
 - hero card on the games home (Play online / Play a friend / Daily puzzle)
-- its own `UPDATES` list and its own "seen" key `outpost.seenUpdateGames`
+- its own `UPDATES` list and its own "seen" key `outpost.seenUpdateGames`; the update system is the same as Outpost's (What's new window once after each update, reload bar when an update arrives while open) and the ✨ What's new button sits at the top of the Games home (`updchip`)
 
 The Outpost repo's NOTES.md documents everything inside (chess engine, Stockfish review, bots, puzzles, lessons, online, sync…). When a game feature changes in Outpost, copy the same change here (or the other way round).
 
@@ -39,3 +39,4 @@ The Outpost repo's NOTES.md documents everything inside (chess engine, Stockfish
 
 ## Change log
 - 2026-11-17: First version: all Outpost games, games-only navigation, hero, new icon and banner, README.
+- 2026-11-17: What's new button on the Games home. (sw cache v2)
