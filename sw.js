@@ -1,7 +1,7 @@
 // Outpost Games offline cache. Bump CACHE on every release.
 // Outpost and Outpost Games live on the same website (fr5quency.github.io), so they share one cache store:
 // each app deletes only its own old caches. The chess engine cache is shared and kept by both.
-const CACHE = "outpost-games-v22";
+const CACHE = "outpost-games-v23";
 const ENGINE = "outpost-engine-sf18";
 const ENGINE_FILES = ["./stockfish/stockfish-18-lite-single.js", "./stockfish/stockfish-18-lite-single.wasm"];
 const ASSETS = ["./", "./index.html", "./manifest.json", "./icon-180.png", "./icon-512.png", "./games-more.js", "./puzzles.json", "./firebase/firebase-app-compat.js", "./firebase/firebase-auth-compat.js", "./pieces/wK.svg", "./pieces/wQ.svg", "./pieces/wR.svg", "./pieces/wB.svg", "./pieces/wN.svg", "./pieces/wP.svg", "./pieces/bK.svg", "./pieces/bQ.svg", "./pieces/bR.svg", "./pieces/bB.svg", "./pieces/bN.svg", "./pieces/bP.svg"];
